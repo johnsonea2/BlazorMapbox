@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<MapboxMap @ref="@_Map"></MapboxMap>
+
+@code {
+
+    private MapboxMap _Map;
+    private Options Options = new Options()
+    {
+        Style = Options.DefaultStyles.Streets
+    };
+
+}
