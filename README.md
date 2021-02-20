@@ -1,11 +1,9 @@
 # Blazor Mapbox
 
 ## Introduction
----
 This is a Blazor library that wraps the [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs) library. Mapbox GL JS is a JavaScript library for vector maps on the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive maps on the web.
 
 ## Getting Started
----
 ### Prerequisites & Installation 
 ---
 - A Mapbox access token is required to view the map. You can acquire one at https://account.mapbox.com/access-tokens/. 
