@@ -34,6 +34,8 @@ namespace Blazor.Mapbox
         {
             // TODO: Need to determine if it is a popup or map event to remove. 
             //await _Runtime.InvokeVoidAsync("Mapbox.off", _EventType);
+
+            await Task.CompletedTask;
         }
 
         [JSInvokable]
