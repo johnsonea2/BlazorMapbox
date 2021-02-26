@@ -4,12 +4,12 @@
 
 Welcome to your new app.
 
-<MapboxMap @ref="@_Map"></MapboxMap>
+<MapboxMap @ref="@_Map" Options="@_Options" AccessToken=""></MapboxMap>
 
 @code {
 
     private MapboxMap _Map;
-    private Options Options = new Options()
+    private Options _Options = new Options()
     {
         Style = Options.DefaultStyles.Streets
     };

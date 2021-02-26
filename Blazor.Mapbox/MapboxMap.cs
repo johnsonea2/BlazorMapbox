@@ -347,7 +347,7 @@ namespace Blazor.Mapbox
             {
                 await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js");
 
-                _Module = await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/Blazor.Mapbox/MapboxInterop.js");
+                _Module = await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/BlazorMapbox/MapboxInterop.js");
                 await _Module.InvokeVoidAsync("AddStylesheet");
 
                 _DotNetObjectReference = DotNetObjectReference.Create(this);
