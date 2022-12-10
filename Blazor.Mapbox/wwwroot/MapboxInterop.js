@@ -5,6 +5,20 @@
     document.head.appendChild(link)
 }
 
+function AddDirectionsJS() {
+    var script = document.createElement("script");  // create a script DOM node
+    script.src = "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js";  // set its src to the provided URL
+    document.head.appendChild(script);
+}
+
+function AddDirectionsCSS() {
+    var link = document.createElement('link');
+    link.rel = "stylesheet";
+    link.href = "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css";
+    document.head.appendChild(link)
+}
+
+
 const instances = {};
 
 var Mapbox = {
@@ -12,6 +26,23 @@ var Mapbox = {
         mapboxgl.accessToken = accessToken;
 
         var map = new mapboxgl.Map(options);
+        map.addControl(
+            new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+            }),
+            'top-left'
+        );
+        map.addControl(
+            new mapboxgl.GeolocateControl({
+                positionOptions: {
+                    enableHighAccuracy: true
+                },
+                // When active the map will receive updates to the device's location as it changes.
+                trackUserLocation: true,
+                // Draw an arrow next to the location dot to indicate which direction the device is heading.
+                showUserHeading: true
+            })
+        );
         instances[options.container] = map;
 
         map.on('load', function () {
@@ -103,4 +134,4 @@ var MapboxPopup = {
     }
 }
 
-export { Mapbox, MapboxPopup, AddStylesheet };
+export { Mapbox, MapboxPopup, AddStylesheet, AddDirectionsJS, AddDirectionsCSS };

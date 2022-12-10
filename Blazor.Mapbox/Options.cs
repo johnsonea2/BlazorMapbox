@@ -12,7 +12,7 @@ namespace Blazor.Mapbox
         /// Mapbox GL JS will look for it in the map's style object. If it is not specified in the style, either, 
         /// it will default to [0, 0] Note: Mapbox GL uses longitude, latitude coordinate order (as opposed to latitude, longitude) to match GeoJSON.
         /// </summary>
-        //public LatLng? Center { get; set; }
+        public LngLat? Center { get; set; }
 
         /// <summary>
         /// The HTML element in which Mapbox GL JS will render the map, or the element's string id . The specified element must have no children.

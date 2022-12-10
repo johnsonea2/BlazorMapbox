@@ -349,6 +349,8 @@ namespace Blazor.Mapbox
 
                 _Module = await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/BlazorMapbox/MapboxInterop.js");
                 await _Module.InvokeVoidAsync("AddStylesheet");
+                await _Module.InvokeVoidAsync("AddDirectionsJS");
+                await _Module.InvokeVoidAsync("AddDirectionsCSS");
 
                 _DotNetObjectReference = DotNetObjectReference.Create(this);
 
