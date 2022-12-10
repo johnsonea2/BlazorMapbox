@@ -5,13 +5,13 @@
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <LangVersion>8.0</LangVersion>
     <RazorLangVersion>3.0</RazorLangVersion>
-    <Version>0.5.1</Version>
+    <Version>0.0.1</Version>
     <Description>Mapbox maps for Blazor. Mapbox GL JS is a JavaScript library for vector maps on the Web.</Description>
-    <Authors>Eric Johnson</Authors>
+    <Authors>Fernando Napier</Authors>
     <RepositoryUrl>https://github.com/johnsonea2/BlazorMapbox</RepositoryUrl>
-    <PackageTags>blazor mapbox</PackageTags>
+    <PackageTags>fennorad mapbox</PackageTags>
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
-    <PackageId>BlazorMapbox</PackageId>
+    <PackageId>Fennorad.Mapbox</PackageId>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
