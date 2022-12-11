@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System;
 using System.ComponentModel.DataAnnotations;
-using Blazor.Mapbox.Models;
+using Fennorad.Mapbox.Models;
 
-namespace Blazor.Mapbox
+namespace Fennorad.Mapbox
 {
     public class Options
     {

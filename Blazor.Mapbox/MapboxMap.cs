@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Blazor.Mapbox.Events;
-using Blazor.Mapbox.Models;
+using Fennorad.Mapbox.Events;
+using Fennorad.Mapbox.Models;
 
-namespace Blazor.Mapbox
+namespace Fennorad.Mapbox
 {
     public partial class MapboxMap : ComponentBase, IAsyncDisposable
     {
@@ -347,7 +347,7 @@ namespace Blazor.Mapbox
             {
                 await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js");
 
-                _Module = await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/BlazorMapbox/MapboxInterop.js");
+                _Module = await _JsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/FennoradMapbox/MapboxInterop.js");
                 await _Module.InvokeVoidAsync("AddStylesheet");
                 await _Module.InvokeVoidAsync("AddDirectionsJS");
                 await _Module.InvokeVoidAsync("AddDirectionsCSS");

@@ -1,7 +1,7 @@
 ﻿using OneOf;
 using System.Text.Json.Serialization;
 
-namespace Blazor.Mapbox.Models
+namespace Fennorad.Mapbox.Models
 {
     /// <summary>
     /// Feature identifier. Feature objects returned from Map#queryRenderedFeatures or event handlers can be used as feature identifiers.

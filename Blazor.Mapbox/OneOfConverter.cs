@@ -3,7 +3,7 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Blazor.Mapbox
+namespace Fennorad.Mapbox
 {
     internal class OneOfConverter : JsonConverter<IOneOf>
     {

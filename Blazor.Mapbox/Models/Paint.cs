@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Blazor.Mapbox.Models
+namespace Fennorad.Mapbox.Models
 {
     public class Paint
     {

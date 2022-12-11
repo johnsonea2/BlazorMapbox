@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Blazor.Mapbox.Models
+namespace Fennorad.Mapbox.Models
 {
     /// <summary>
     /// A LngLatBounds object represents a geographical bounding box, defined by its southwest and northeast points in longitude and latitude.

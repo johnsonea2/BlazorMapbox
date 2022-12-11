@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using Blazor.Mapbox.Models;
+using Fennorad.Mapbox.Models;
 
-namespace Blazor.Mapbox.Events
+namespace Fennorad.Mapbox.Events
 {
     /// <summary>
     /// A MapDataEvent object is emitted with the Map.event:data and Map.event:dataloading events. Possible values for dataTypes are: 

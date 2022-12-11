@@ -1,4 +1,4 @@
-﻿namespace Blazor.Mapbox.Events
+﻿namespace Fennorad.Mapbox.Events
 {
     public class MapBoxZoomEvent : BaseEvent
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Blazor.Mapbox
+namespace Fennorad.Mapbox
 {
     public class Listener : IDisposable
     {

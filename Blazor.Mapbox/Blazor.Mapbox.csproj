@@ -1,14 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <LangVersion>8.0</LangVersion>
     <RazorLangVersion>3.0</RazorLangVersion>
-    <Version>0.0.1</Version>
-    <Description>Mapbox maps for Blazor. Mapbox GL JS is a JavaScript library for vector maps on the Web.</Description>
+    <Version>0.0.2</Version>
+    <Description>Easily integrate your blazor app with Mapbox.</Description>
     <Authors>Fernando Napier</Authors>
-    <RepositoryUrl>https://github.com/johnsonea2/BlazorMapbox</RepositoryUrl>
+    <RepositoryUrl>https://github.com/fernando-napier/BlazorMapbox</RepositoryUrl>
     <PackageTags>fennorad mapbox</PackageTags>
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
     <PackageId>Fennorad.Mapbox</PackageId>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.11" />
     <PackageReference Include="OneOf" Version="3.0.163" />
   </ItemGroup>
 
